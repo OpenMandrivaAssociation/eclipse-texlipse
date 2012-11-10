@@ -1,0 +1,9 @@
+--- net.sourceforge.texlipse/build.properties	2008-02-25 23:15:30.000000000 +0100
++++ build.properties	2009-06-18 14:39:35.543178215 +0200
+@@ -8,5 +8,4 @@
+                templates/,\
+                toc.xml,\
+                about.html,\
+-               contexts.xml,\
+-               ddeclient.dll
++               contexts.xml

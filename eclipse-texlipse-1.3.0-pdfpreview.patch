@@ -1,0 +1,20 @@
+--- net.sourceforge.texlipse/net.sourceforge.texlipse/source/net/sourceforge/texlipse/viewer/ViewerAttributeRegistry.java	2009-05-04 23:12:38.000000000 +0200
++++ ViewerAttributeRegistry.java	2009-06-16 21:09:03.602314289 +0200
+@@ -61,7 +61,7 @@
+     private static final String VIEWER_YAP = "yap";
+ 
+     private static final String VIEWER_GV = "gv";
+-    private static final String VIEWER_ACROBAT = "acroread";
++    private static final String VIEWER_ACROBAT = "PDF Reader";
+     private static final String VIEWER_ITEXMAC = "itexmac";
+ 
+     // default viewer attribute values 
+@@ -179,7 +179,7 @@
+         prefs.setDefault(VIEWER_GV + ATTRIBUTE_INVERSE_SEARCH, INVERSE_SEARCH_NO);
+         prefs.setDefault(VIEWER_GV + ATTRIBUTE_FORWARD_SEARCH, "false");
+ 
+-        prefs.setDefault(VIEWER_ACROBAT + ATTRIBUTE_COMMAND, findFromEnvPath("acroread", "acroread.exe", ""));
++        prefs.setDefault(VIEWER_ACROBAT + ATTRIBUTE_COMMAND, findFromEnvPath("xdg-open", "acroread.exe", ""));
+         prefs.setDefault(VIEWER_ACROBAT + ATTRIBUTE_ARGUMENTS, DEFAULT_ARGUMENTS_ACROBAT);
+         prefs.setDefault(VIEWER_ACROBAT + ATTRIBUTE_DDE_VIEW_COMMAND, "[DocOpen(\"%fullfile\")][FileOpen(\"%fullfile\")]"); 
+         prefs.setDefault(VIEWER_ACROBAT + ATTRIBUTE_DDE_VIEW_SERVER, "acroview");
