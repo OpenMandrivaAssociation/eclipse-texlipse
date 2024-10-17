@@ -10,7 +10,7 @@ Summary:        Eclipse plugin for editing Latex
 
 Group:          Text tools
 License:        EPL
-URL:            http://texlipse.sourceforge.net
+URL:            https://texlipse.sourceforge.net
 
 Source0:        net.sourceforge.%{pkgname}.tar.gz
 # Source1 is used to download Source0
